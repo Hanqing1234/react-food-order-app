@@ -1,8 +1,16 @@
-function App() {
+import React, { Fragment } from "react";
+
+import Header from "./components/Layout/Header";
+import Meals from "./components/Meals/Meals";
+
+const App = () => {
   return (
-    <div>
-      <h2>Let's get started!</h2>
-    </div>
+    <Fragment>
+      <Header />
+      <main>
+      <Meals />
+      </main>
+    </Fragment>
   );
 }
 
